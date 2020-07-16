@@ -18,6 +18,11 @@ h2 {
 	margin-bottom: 20px;
 }
 
+h3 {
+	font-size: 20px;
+
+}
+
 p {
 	font-size: 20px;
 }
@@ -26,7 +31,7 @@ p {
 
 /* container */
 .container {
-	height: 800px;
+	height: 600px;
 	width: 80%;
 	margin: 50px auto;
 	background-color: darkseagreen;
@@ -36,15 +41,15 @@ p {
 /* container top */
 .container__top {
 	height: 45%;
-	width: 80%;
+
 	margin: 0 auto;
-	padding: 30px;
+	padding: 10px 0;
 	border: 1px solid #000;
 }
 
 .container__top__calcola {
 	height: 80%;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	background-color: red;
 }
@@ -70,7 +75,7 @@ p {
 }
 
 .container__top__calcola__input__box p {
-	padding: 20px;
+	padding: 10px;
 }
 
 .container__top__calcola__input__box input#nomeIns {
@@ -101,15 +106,39 @@ p {
 /* container bottom */
 .container__bottom {
 	height: 55%;
-	width: 80%;
+
 	margin: 0 auto;
-	padding: 30px;
+	padding: 10px 0;
 	border: 1px solid #000;
 }
 
-.container__top__biglietto {
+.container__bottom__ticket {
 	height: 80%;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	background-color: red;
+	padding: 20px;
+}
+
+.container__bottom__ticket__det {
+	height: 80%;
+
+	display: flex;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.container__bottom__ticket__det div {
+	flex: 1 1 auto;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.container__bottom__ticket__det__name {
+
+	background-color: grey;
 }
