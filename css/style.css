@@ -18,6 +18,10 @@ h2 {
 	margin-bottom: 20px;
 }
 
+p {
+	font-size: 20px;
+}
+
 /* style */
 
 /* container */
@@ -45,12 +49,30 @@ h2 {
 	background-color: red;
 }
 
+/* container top sezione input */
 .container__top__calcola__input {
 	height: 50%;
 	width: 100%;
+	display: flex;
+
 	border: 1px solid black;
+
 }
 
+.container__top__calcola__input__box {
+	flex: 0 1 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__top__calcola__input__box p {
+	padding: 20px;
+}
+
+
+/* container top sezione button */
 .container__top__calcola__button {
 	height: 50%;
 	width: 100%;
