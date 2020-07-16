@@ -20,6 +20,9 @@ document.getElementById("genera").addEventListener("click", function () {
   var prezzo = prezzoTicket(km, eta);
   document.getElementById("nomePass").innerHTML = nome;
   document.getElementById("prezzo").innerHTML = prezzo;
+  document.getElementById("sconto").innerHTML = etaOff(eta);
+  document.getElementById("carrozza").innerHTML = numRandom(1, 10);
+  document.getElementById("code").innerHTML = numRandom(90000, 99999);
 
   var sezione = document.getElementById("sezioneTicket");
   sezione.classList.remove("hidden");
@@ -38,10 +41,13 @@ document.getElementById("annulla").addEventListener("click", function () {
   document.getElementById("etaIns").value = "Minorenne";
 });
 
-/* funzioni */
-
+/* prova */
 console.log(prezzoTicket(10, "over"));
 console.log(numRandom(90000, 99999));
+console.log(etaOff("mag"));
+/* fine prova */
+
+/* funzioni */
 
 // funzione calcolo prezzo biglietto
 function prezzoTicket(km, eta) {
@@ -57,4 +63,21 @@ function prezzoTicket(km, eta) {
 // funzione genera Random tra 2 intervalli
 function numRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// funzione converti età in offerta
+
+function etaOff(str) {
+  switch (str) {
+    case "min":
+      return "Sconto minore - 20%";
+      break;
+    case "over":
+      return "Sconto over 65 - 40%";
+      break;
+
+    default:
+      return "Prezzo intero";
+      break;
+  }
 }
