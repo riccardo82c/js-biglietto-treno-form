@@ -142,3 +142,15 @@ p {
 
 	background-color: grey;
 }
+
+/* style associato ai bottoni */
+
+.hidden {
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.show {
+	opacity: 1;
+	transition: 0.5s ease-in-out;
+}

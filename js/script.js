@@ -21,24 +21,22 @@ document.getElementById("genera").addEventListener("click", function () {
   document.getElementById("nomePass").innerHTML = nome;
   document.getElementById("prezzo").innerHTML = prezzo;
 
-  /* var utente = document.getElementById("utente");
-  utente.innerHTML = valore;
-  utente.classList.remove("hidden");
-  utente.classList.add("show");
- */
-  /* utente.className = 'show'; */
+  var sezione = document.getElementById("sezioneTicket");
+  sezione.classList.remove("hidden");
+  sezione.classList.add("show");
 });
 
 /* evento al click del bottone annulla */
-/* document.getElementById("annulla").addEventListener("click", function () {
-  var utente = document.getElementById("utente");
-  utente.className = "hidden";
+document.getElementById("annulla").addEventListener("click", function () {
+  var sezione = document.getElementById("sezioneTicket");
+  sezione.classList.remove("show");
+  sezione.classList.add("hidden");
 
-  //   utente.classList.remove("show");
-  //   utente.classList.add("hidden");
-}); */
-
-/*  */
+  /* reset */
+  document.getElementById("nomeIns").value = "";
+  document.getElementById("kmIns").value = 0;
+  document.getElementById("etaIns").value = "Minorenne";
+});
 
 /* funzioni */
 
