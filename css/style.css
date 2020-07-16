@@ -15,10 +15,12 @@
 h2 {
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* style */
 
+/* container */
 .container {
 	height: 800px;
 	width: 80%;
@@ -26,20 +28,48 @@ h2 {
 	background-color: darkseagreen;
 }
 
+
+/* container top */
 .container__top {
-	height: 40%;
+	height: 45%;
 	width: 80%;
 	margin: 0 auto;
 	padding: 30px;
 	border: 1px solid #000;
 }
 
+.container__top__calcola {
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
+	background-color: red;
+}
+
+.container__top__calcola__input {
+	height: 50%;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.container__top__calcola__button {
+	height: 50%;
+	width: 100%;
+	border: 1px solid black;
+}
 
 
+/* container bottom */
 .container__bottom {
-	height: 60%;
+	height: 55%;
 	width: 80%;
 	margin: 0 auto;
 	padding: 30px;
 	border: 1px solid #000;
+}
+
+.container__top__biglietto {
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
+	background-color: red;
 }
