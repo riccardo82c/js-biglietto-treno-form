@@ -52,16 +52,28 @@ select {
 button {
   background-color: #2a6379;
   color: cornsilk;
-  border-radius: 10px;
+  padding: 10px 20px;
   font-size: 20px;
-  border: 1px solid #2a6379;
+  border-radius: 5px;
+  border: 1px solid cornsilk;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background-color: cornsilk;
   color: #2a6379;
   border: 1px solid #2a6379;
+
+  box-shadow: 2px 2px 2px #2a6379;
 }
+
+button:active {
+  transform: translateY(1px);
+  scale: 0.95;
+  border: 1px solid #2a6379;
+  box-shadow: 1px 1px 1px #2a6379;
+}
+
 .white-background {
   background-color: cornsilk;
 }
@@ -80,7 +92,6 @@ button:hover {
   margin: 20px auto;
   padding: 10px 0;
   background-color: #2a6379b5;
-  border-radius: 20px;
 }
 
 .container__top__calcola {
@@ -93,6 +104,7 @@ button:hover {
 .container__top__calcola__input {
   padding: 20px;
   display: flex;
+  border-radius: 10px 10px 0 0;
 }
 
 .container__top__calcola__input__box {
@@ -105,6 +117,7 @@ button:hover {
 
 .container__top__calcola__input__box p {
   padding: 10px;
+  font-size: 20px;
 }
 
 .container__top__calcola__input__box input#nomeIns {
@@ -121,11 +134,11 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 10px 10px;
 }
 
 .container__top__calcola__button button {
-  margin: 0 20px;
-  padding: 10px 20px;
+  margin: 0 30px;
 }
 
 /* container bottom */
@@ -133,7 +146,6 @@ button:hover {
   margin: 0 auto;
   padding: 10px 0;
   background-color: #2a6379b5;
-  border-radius: 20px;
 }
 
 /* style associato al click dei bottoni */
@@ -153,8 +165,8 @@ button:hover {
 .container__bottom__ticket {
   width: 90%;
   margin: 0 auto;
-
   padding: 20px;
+  border-radius: 10px;
 }
 
 .container__bottom__ticket__det {

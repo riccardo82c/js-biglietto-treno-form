@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title></title>
+	<title>Biglietteria OnLine</title>
 </head>
 
 <body>
@@ -19,16 +19,16 @@
 				<div class="container__top__calcola__input  white-background">
 					<div class="container__top__calcola__input__box">
 						<p>Nome e cognome</p>
-						<input type="text" id="nomeIns" placeholder="Inserisci nome e cognome">
+						<input type="text" id="nomeIns" placeholder="Inserisci nome e cognome" required>
 
 					</div>
 					<div class="container__top__calcola__input__box">
 						<p>Km da percorrere</p>
-						<input type="number" name="" id="kmIns">
+						<input type="number" name="" id="kmIns" min="1" max="250">
 
 					</div>
 					<div class="container__top__calcola__input__box">
-						<p>Fascia d'ètà</p>
+						<p>Fascia d'età</p>
 						<select name="" id="etaIns">
 							<option value="min">Minorenne</option>
 							<option value="mag">Maggiorenne</option>
@@ -51,7 +51,7 @@
 				<h3>Dettagio passeggeri</h3>
 				<div class="container__bottom__ticket__det">
 					<div class="container__bottom__ticket__det__name">
-						<h4>Nome passeggero</h4>
+						<h4>NOME PASSEGGERO</h4>
 
 						<p id="nomePass">Pippo</p>
 					</div>
@@ -67,14 +67,14 @@
 
 					</div>
 					<div class="container__bottom__ticket__det__code">
-						<h4>Codice</h4>
+						<h4>Codice Biglietto</h4>
 
 						<p id="code">Numero</p>
 
 					</div>
 					<div class="container__bottom__ticket__det__price">
 
-						<h4>Costo</h4>
+						<h4>Prezzo Biglietto</h4>
 
 						<p id="prezzo">Numero</p>
 					</div>
