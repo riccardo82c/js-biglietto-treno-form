@@ -1,156 +1,180 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* typo */
 
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://images6.alphacoders.com/813/thumb-1920-813172.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2,
+h3,
+p {
+}
+
 h2 {
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: cornsilk;
 }
 
 h3 {
-	font-size: 20px;
+  font-size: 20px;
+}
 
+h4 {
+  font-size: 16px;
+  text-align: center;
 }
 
 p {
-	font-size: 20px;
+  font-size: 16px;
+}
+
+input,
+select {
+  font-size: 16px;
+}
+
+button {
+  background-color: #2a6379;
+  color: cornsilk;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid #2a6379;
+}
+
+button:hover {
+  background-color: cornsilk;
+  color: #2a6379;
+  border: 1px solid #2a6379;
+}
+.white-background {
+  background-color: cornsilk;
 }
 
 /* style */
 
 /* container */
 .container {
-	height: 600px;
-	width: 80%;
-	margin: 50px auto;
-
+  height: 600px;
+  width: 80%;
+  margin: 50px auto;
 }
-
 
 /* container top */
 .container__top {
-	height: 45%;
-
-	margin: 0 auto;
-	padding: 10px 0;
-	border: 1px solid #000;
+  margin: 20px auto;
+  padding: 10px 0;
+  background-color: #2a6379b5;
+  border-radius: 20px;
 }
 
 .container__top__calcola {
-	height: 80%;
-	width: 90%;
-	margin: 0 auto;
-	background-color: red;
+  height: 80%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* container top sezione input */
 .container__top__calcola__input {
-	height: 50%;
-	width: 100%;
-	display: flex;
-
-	border: 1px solid black;
-
+  padding: 20px;
+  display: flex;
 }
 
-
-
 .container__top__calcola__input__box {
-	flex: 0 1 33%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  flex: 0 1 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container__top__calcola__input__box p {
-	padding: 10px;
+  padding: 10px;
 }
 
 .container__top__calcola__input__box input#nomeIns {
-	width: 160px;
+  width: 200px;
 }
 
 .container__top__calcola__input__box input#kmIns {
-	width: 50px;
+  width: 50px;
 }
 
 /* container top sezione button */
 .container__top__calcola__button {
-	height: 50%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-
-	border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container__top__calcola__button button {
-	margin: 0 20px;
-	padding: 10px 20px;
+  margin: 0 20px;
+  padding: 10px 20px;
 }
 
 /* container bottom */
 .container__bottom {
-	height: 55%;
-
-	margin: 0 auto;
-	padding: 10px 0;
-	border: 1px solid #000;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #2a6379b5;
+  border-radius: 20px;
 }
 
-.container__bottom__ticket {
-	height: 80%;
-	width: 90%;
-	margin: 0 auto;
-	background-color: red;
-	padding: 20px;
-}
-
-.container__bottom__ticket__det {
-	height: 80%;
-
-	display: flex;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-}
-
-.container__bottom__ticket__det div {
-	flex: 1 1 auto;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-
-}
-
-.container__bottom__ticket__det__name {
-
-	background-color: grey;
-}
-
-/* style associato ai bottoni */
+/* style associato al click dei bottoni */
 
 .hidden {
-	opacity: 0;
-	transition: 0.5s ease-in-out;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .show {
-	opacity: 1;
-	transition: 0.5s ease-in-out;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+/*  */
+
+.container__bottom__ticket {
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+.container__bottom__ticket__det {
+  height: 80%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #2a6379;
+  border-bottom: 2px solid #2a6379;
+}
+
+.container__bottom__ticket__det div {
+  flex: 0 1 15%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container__bottom__ticket__det__name {
+  background-color: #b4ced9;
 }

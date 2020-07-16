@@ -70,10 +70,10 @@ function numRandom(min, max) {
 function etaOff(str) {
   switch (str) {
     case "min":
-      return "Sconto minore - 20%";
+      return "Sconto - 20%";
       break;
     case "over":
-      return "Sconto over 65 - 40%";
+      return "Sconto - 40%";
       break;
 
     default:
