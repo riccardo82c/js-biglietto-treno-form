@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* typo */
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+/* style */
+
+.container {
+	height: 800px;
+	width: 80%;
+	margin: 50px auto;
+	background-color: darkseagreen;
+}
+
+.container__top {
+	height: 40%;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px;
+	border: 1px solid #000;
+}
+
+
+
+.container__bottom {
+	height: 60%;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px;
+	border: 1px solid #000;
+}
